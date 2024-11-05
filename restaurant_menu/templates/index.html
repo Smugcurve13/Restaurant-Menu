@@ -8,7 +8,11 @@
 <body>
     <h1>Restaurant Menu</h1>
         {% for meal in meals %}
-        <h3>{{ meal }}</h3>
+        <h2>{{ meal.1 }}</h2>
+        {% for row in item_list %}
+            <h3>{{ row.meal }}</h3>
+            <p>{{ row.description }}</p>
+        {% endfor %}
         {% endfor %}
 </body>
 </html>
